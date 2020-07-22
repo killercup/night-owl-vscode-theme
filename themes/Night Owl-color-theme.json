@@ -326,7 +326,7 @@
       "name": "Variable",
       "scope": "variable",
       "settings": {
-        "foreground": "#addb67"
+        // "foreground": "#addb67"
       }
     },
     {
@@ -385,7 +385,7 @@
       "scope": "entity.name.function",
       "settings": {
         "foreground": "#c792ea",
-        "fontStyle": "italic"
+        // "fontStyle": "italic"
       }
     },
     {
@@ -722,7 +722,7 @@
       "scope": ["entity.name.function"],
       "settings": {
         "foreground": "#82AAFF",
-        "fontStyle": "italic"
+        // "fontStyle": "bold"
       }
     },
     {
@@ -1777,5 +1777,58 @@
         "fontStyle": ""
       }
     }
-  ]
+  ],
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "*.mutable": {
+			"fontStyle": "underline"
+		},
+		// "comment": "#637777",
+    // "comment.documentation": "#819b9b",
+    "parameter": {
+      "fontStyle": "italic"
+    },
+    "parameter.mutable": {
+      "fontStyle": "italic underline"
+    },
+    "selfKeyword": {
+      "foreground": "#fff",
+			"fontStyle": "italic"
+		},
+		"selfKeyword.mutable": {
+			"fontStyle": "italic underline"
+		},
+		"*.unsafe": "#BC8383",
+		"function.unsafe": "#EF5350",
+		"keyword.unsafe": {
+      "foreground": "#EF5350",
+      "fontStyle": "bold"
+    },
+		// "property": "#DFAF8F",
+		// "function": "#93E0E3",
+		// "namespace": "#BFEBBF",
+		"macro": {
+      "fontStyle": "italic"
+    },
+		// "formatSpecifier": "#94BFF3",
+		// "variable": "#DCDCCC",
+		// "variable.static.constant": "#BDE0F3",
+		"struct": "#addb67",
+		"enum": "#addb67",
+		"union": "#addb67",
+		"typeAlias": "#addb67",
+		"builtinType": "#ffeb95",
+		"type": "#22da6e",
+		// "interface": "#8CD0D3",
+		"enumMember": "#22da6e",
+    "typeParameter": "#82AAFF",
+		// "lifetime": {
+		// 	"foreground": "#DFAF8F",
+		// 	"fontStyle": "italic"
+		// },
+		// "number": "#BFEBBF",
+		// "string": "#CC9393",
+		// "attribute": "#94BFF3",
+		// "function.attribute": "#94BFF3",
+	}
 }
